@@ -19,8 +19,8 @@ function getURL() {
  
 function main() {
  
-  mysql_connect("localhost", "db_admin", "qhC=zARKf3kk") or die(mysql_error());
-  mysql_select_db("tracker") or die(mysql_error());
+  mysql_connect("localhost", "db_user", "password") or die(mysql_error());
+  mysql_select_db("trackerdb") or die(mysql_error());
  
   $url = mysql_real_escape_string(getURL());
   $data = mysql_real_escape_string($_GET['d']);

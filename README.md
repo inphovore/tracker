@@ -8,8 +8,10 @@ http://yourdomain.com/tracker/index.php?d=somedata&page=http://redirect.com&opto
 
 # Getting Started
 
-* mysql -u youruser -p yourdb < tracker.sql
+* Create your trackerdb database
+* mysql -u youruser -p trackerdb < tracker.sql
 * Copy or link htdocs (or htdocs/index.php) into your webtree
+* Edit index.php, populating mysql details
 
 ## License (WTFPL)
 
